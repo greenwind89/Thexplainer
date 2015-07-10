@@ -1,0 +1,25 @@
+
+# ignore vim swap files
+*.swp
+
+temp/
+tmp/
+node_modules/
+
+client/bower_components/
+client/dist/
+
+server/config/secured/
+
+npm-debug.log
+
+# MAC folder
+.DS_Store
+
+
+.env
+
+
+platforms/
+
+

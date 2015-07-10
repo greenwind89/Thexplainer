@@ -1,0 +1,14 @@
+<div data-ng-controller="subtitle.sentencesCtrl">
+  <div>
+    <span data-ng-repeat="board in boards">
+      <span data-ng-click="chooseBoard(board);" class="badge">{{$index}} </span>
+    </span>
+  </div>
+  <div data-ng-repeat="col in currentCols" class="col-xs-4">
+    <div data-ng-repeat="sentence in col.sentences">
+      {{sentence.title}}
+    </div>
+    
+  </div>
+  
+</div>

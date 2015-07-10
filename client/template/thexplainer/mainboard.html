@@ -1,0 +1,13 @@
+<div data-ng-controller="subtitle.fileUploadCtrl">
+    <div class="btn btn-default" ngf-select ng-model="files" ngf-multiple="true">Upload Subtitle(s)</div>
+</div>
+<div class="col-xs-12" data-ng-controller="subtitle.listSubtitleCtrl">
+  <div class="col-xs-3">
+    <div data-ng-click="selectSubtitle(subtitle)" data-ng-repeat="subtitle in subtitles">
+      {{subtitle.title}}
+    </div>
+  </div>
+  <div data-ng-if="sentences" data-ng-include="'template/subtitle/sentences'" class="col-xs-9 sentences-holder">
+
+  </div>
+</div>
